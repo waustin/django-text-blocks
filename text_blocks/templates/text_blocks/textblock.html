@@ -1,0 +1,6 @@
+<div class="textblock textblock-{{ textblock.slug }}">
+{% if textblock.header %}
+    <h2 class="title">{{ textblock.header }}</h2>
+{% endif %}
+    <div class="content">{{ textblock.content|safe }}</div>
+</div>
