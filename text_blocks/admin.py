@@ -9,10 +9,6 @@ class TextBlockAdminForm(forms.ModelForm):
     content = forms.CharField(widget=forms.widgets.Textarea(
         attrs={'class': 'mceSimple', 'size': '40'}))
 
-    class Meta:
-        model = TextBlock
-
-
 class TextBlockAdmin(admin.ModelAdmin):
     ordering = ['slug', ]
     list_display = ('slug', 'header')
