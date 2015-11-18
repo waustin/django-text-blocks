@@ -15,7 +15,7 @@ setup(
     license='BSD License',  # example license
     description='A simple Django app for editing random pieces of text content on a site.',
     long_description=README,
-    url='https://github.com/waustin/django-text-blocks'
+    url='https://github.com/waustin/django-text-blocks',
     author='Wade Austin',
     classifiers=[
         'Environment :: Web Environment',
