@@ -1,19 +1,21 @@
 import os
 from setuptools import setup
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
+    README = readme.read()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-text-blocks',
-    version='0.3',
+    version='0.4',
     packages=['text_blocks'],
     include_package_data=True,
     license='BSD License',  # example license
     description='A simple Django app for editing random pieces of text content on a site.',
     long_description=README,
+    url='https://github.com/waustin/django-text-blocks'
     author='Wade Austin',
     classifiers=[
         'Environment :: Web Environment',
