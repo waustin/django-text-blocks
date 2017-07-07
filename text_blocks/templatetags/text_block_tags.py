@@ -64,7 +64,7 @@ def textblock(context, slug, timeout=None, using='text_blocks/textblock.html'):
         return ''
 
     context.update({'textblock': textblock})
-    result = render_to_string(using, context)
+    result = render_to_string(using, context.flatten())
     context.pop()
 
     if timeout:
